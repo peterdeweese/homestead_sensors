@@ -6,34 +6,35 @@
     "build:watch": "esbuild app/javascript/*.* --bundle --sourcemap --watch --outdir=app/assets/builds"
   },
   "dependencies": {
-    "@babel/core": "^7.28.3",
-    "@babel/plugin-transform-runtime": "^7.28.3",
-    "@babel/preset-env": "^7.28.3",
-    "@babel/runtime": "^7.28.3",
+    "@babel/core": "7",
+    "@babel/plugin-transform-runtime": "7",
+    "@babel/preset-env": "7",
+    "@babel/runtime": "7",
     "@hotwired/stimulus": "^3.2.2",
     "@hotwired/turbo-rails": "^8.0.16",
-    "@types/babel__core": "^7.20.5",
-    "@types/webpack": "^5.28.5",
-    "babel-loader": "^8.4.1",
-    "compression-webpack-plugin": "^9.2.0",
+    "@types/babel__core": "7",
+    "@types/webpack": "5",
+    "babel-loader": "8",
+    "compression-webpack-plugin": "9",
     "shakapacker": "8.3.0",
-    "terser-webpack-plugin": "^5.3.14",
-    "webpack": "^5.101.3",
-    "webpack-assets-manifest": "^5.2.1",
-    "webpack-cli": "^4.10.0",
-    "webpack-merge": "^5.10.0"
+    "terser-webpack-plugin": "5",
+    "webpack": "5",
+    "webpack-assets-manifest": "5",
+    "webpack-cli": "4",
+    "webpack-merge": "5"
   },
   "version": "0.1.0",
   "babel": {
     "presets": [
+      "./node_modules/shakapacker/package/babel/preset.js",
       "./node_modules/shakapacker/package/babel/preset.js"
     ]
   },
   "browserslist": [
     "defaults"
   ],
-  "packageManager": "npm@10.8.2",
   "devDependencies": {
-    "webpack-dev-server": "^4.15.2"
-  }
+    "webpack-dev-server": "4"
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
