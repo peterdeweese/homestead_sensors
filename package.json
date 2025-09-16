@@ -45,6 +45,7 @@
   ],
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.6.1",
+    "esbuild": "^0.25.9",
     "react-refresh": "^0.17.0",
     "webpack-dev-server": "4"
   },
